@@ -1,5 +1,3 @@
-Here's a basic README file for your Flask application:
-
 ```
 # Flask Chatbot Application
 
