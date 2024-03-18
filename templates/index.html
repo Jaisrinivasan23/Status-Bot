@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOT</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <form method="POST" name="chatInput">
+  <div class="chatbot">
+    <div class="header">
+      <div class="top"><h3>Chat with CHATTU</h3></div>
+      <div class="text1"><h6 style="color: rgba(11, 11, 12, 0.555);">POWERED BY <b style="color: #549e5f">TECH</b> <b style="color: #889f2b">VASEEGRAH</b></h6></div>
+      <div class="top-img">
+        <img src="{{ url_for('static', filename='Images/wave.png') }}" alt="">
+      </div>
+        <div class="image">
+          <img src="{{ url_for('static', filename='Images/bot.jpeg') }}" alt="">
+          </div>
+             <div class="btn">
+          </div>
+      <span class="close-btn material-symbols-outlined"></span>
+    </div>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined"><img src="{{ url_for('static', filename='Images/botsmall.png') }}" alt=""></span>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea id="my-text" name="userInput" placeholder="ENTER A MESSAGE..." spellcheck="false" ></textarea>
+      <p id="result">0/30</p>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+      
+    </div>
+    </div>
+ 
+  </form>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+   <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
